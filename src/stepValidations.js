@@ -1,6 +1,6 @@
 export default [
   function basicValidations({ errors }) {
-    return !errors.firstName;
+    return !errors.petName;
   },
 
   function contactValidations({ errors }) {
@@ -10,7 +10,7 @@ export default [
   function addressValidations({ errors }) {
     return !errors.addressLine1;
   },
-  function addAdnAbsenceValidation({ errors }) {
-    return !errors.color;
-  }
+  // function addAdnAbsenceValidation({ errors }) {
+  //   return !errors.color;
+  // }
 ];

@@ -43,16 +43,22 @@ const WithFormikApp = withFormik(App);
 render(
   <WithFormikApp
     formData={{
-      color: "",
-      firstName: "",
-      lastName: "",
-      dob: "",
-      email: "",
-      phone: "",
-      mobile: "",
-      addressLine1: "",
-      addressLine2: "",
-      country: ""
+      yourPet: "",
+      sell: "",
+      lostFound: "",
+      inGoodHands: "",
+      // color: "",
+      petName: "",
+      dateOfBirthe: "",
+      breed: "",
+      addPhoto: "",
+      comments: "",
+      titleOfAdd: "",
+      sex: "",
+      location: "",
+      price: "",
+
+  
     }}
   />,
   document.getElementById("root")

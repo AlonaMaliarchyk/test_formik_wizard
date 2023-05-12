@@ -10,14 +10,36 @@ import {
   // SubmitButton
 } from "formik-wizard-form";
 
-import BasicDetails from "./BasicDetails";
-import ContactDetails from "./ContactDetails";
-import AddressDetails from "./AddressDetails";
-import AddAnAbsence from "./AddAnAbsence";
+import PersonalDelailsMyPets from "./AddMyPet/PersonalDelailsMyPets";
+import MoreInfoMyPet from "./AddMyPet/MoreInfoMyPet";
+import ChooseOption from "./AddMyPet/ChooseOption";
+// import AddAnAbsence from "./AddAnAbsence";
+
+// function createForms(selectedOption: AdPetType) {
+//   const result = [];
+//   switch (selectedOption) {
+//     case AdPetType.InGoodHand:
+//       result.push(<Step component={PersonalDelailsMyPets} title="Personal delailst" />);
+//       result.push(<Step component={PersonalDelailsMyPets} title="Personal delailst" />);
+//       result.push(<Step component={PersonalDelailsMyPets} title="Personal delailst" />);
+//       result.push(<Step component={PersonalDelailsMyPets} title="Personal delailst" />);
+//     break;
+//     case AdPetType.Sell: result.push(<Step component={MoreInfoMyPet} title="More info" />); break;
+//     case AdPetType.My: result.push(<Step component={AddressDetails} title="Address Details" />); break;
+//     case AdPetType.LostAndFound: //... ; break;
+//   }
+//   return result;
+// }
+
 
 export default [
-  <Step component={BasicDetails} title="Basic Details" />,
-  <Step component={ContactDetails} title="Contact Details" />,
-  <Step component={AddressDetails} title="Address Details" />,
-  <Step component={AddAnAbsence} title="Add Absence" />
+
+    // switch(selectedOption) {
+    //   case AdPetType.Sell
+    // }
+  <Step component={ChooseOption} title="Choose Option" />,
+  <Step component={PersonalDelailsMyPets} title="Personal delailst" />,
+  <Step component={MoreInfoMyPet} title="More info" />,
+  
+  // <Step component={AddAnAbsence} title="Add Absence" />
 ];
